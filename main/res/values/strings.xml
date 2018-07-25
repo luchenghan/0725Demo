@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MySqlDemo</string>
+    <string name="title_activity_register">Register</string>
+
+    <string-array name="names">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <string-array name="Age">
+        <item>11~20</item>
+        <item>21~30</item>
+        <item>31~40</item>
+        <item>41~50</item>
+        <item>51~60</item>
+        <item>大於60</item>
+    </string-array>
+
+    <string-array name="Acadamic">
+        <item>小學</item>
+        <item>國中</item>
+        <item>高中職</item>
+        <item>大學</item>
+        <item>研究所</item>
+    </string-array>
+</resources>

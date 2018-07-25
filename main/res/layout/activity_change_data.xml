@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeData">
+
+    <TextView
+        android:id="@+id/Account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="85dp"
+        android:text="帳號  :"
+        android:textSize="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp" />
+
+    <TextView
+        android:id="@+id/txtAccount"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Account"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="125dp"
+        android:textSize="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="125dp" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Account"
+        android:layout_below="@+id/Account"
+        android:text="姓名  :"
+        android:textSize="25dp"
+        android:layout_alignLeft="@+id/Account"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Name"
+        android:layout_alignStart="@+id/txtAccount"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignLeft="@+id/txtAccount" />
+
+    <Spinner
+        android:id="@+id/SpinnerGender"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Gender"
+        android:layout_alignStart="@+id/txtAccount"
+        android:layout_alignLeft="@+id/txtAccount"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Account"
+        android:layout_below="@+id/Name"
+        android:text="性別  :"
+        android:textSize="25dp"
+        android:layout_alignLeft="@+id/Account"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Account"
+        android:layout_below="@+id/SpinnerGender"
+        android:text="年紀  :"
+        android:textSize="25dp"
+        android:layout_alignLeft="@+id/Account"
+        android:layout_marginTop="20dp"/>
+
+    <Spinner
+        android:id="@+id/SpinnerAge"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Age"
+        android:layout_alignStart="@+id/SpinnerGender"
+        android:layout_alignLeft="@+id/SpinnerGender"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Account"
+        android:layout_below="@+id/Age"
+        android:text="信箱  :"
+        android:textSize="25dp"
+        android:layout_alignLeft="@+id/Account"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Email"
+        android:layout_alignStart="@+id/txtAccount"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignLeft="@+id/txtAccount" />
+
+    <TextView
+        android:id="@+id/Acadamic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Account"
+        android:layout_below="@+id/Email"
+        android:text="學歷  :"
+        android:textSize="25dp"
+        android:layout_alignLeft="@+id/Account"
+        android:layout_marginTop="20dp"/>
+
+    <Spinner
+        android:id="@+id/SpinnerAcadamid"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Acadamic"
+        android:layout_alignStart="@+id/txtAccount"
+        android:layout_alignLeft="@+id/txtAccount"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="109dp"
+        android:layout_toEndOf="@+id/txtAccount"
+        android:text="送出"
+        android:layout_toRightOf="@+id/txtAccount" />
+
+</RelativeLayout>
